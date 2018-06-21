@@ -1,5 +1,5 @@
 #We are ignoring the non src folders
-/.idea/.*
+/.idea/
 /com/
 /target/
 /target-output/
