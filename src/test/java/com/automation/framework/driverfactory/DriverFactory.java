@@ -2,10 +2,10 @@ package com.automation.framework.driverfactory;
 
 import org.openqa.selenium.remote.RemoteWebDriver;
 
-public class DriverFactory {
+ class DriverFactory {
 
     public RemoteWebDriver getDriver(String browser) {
-        return new ChromeFactory().getWebDrive();
+        return new ChromeFactory().getWebDriver();
     }
 
 }
