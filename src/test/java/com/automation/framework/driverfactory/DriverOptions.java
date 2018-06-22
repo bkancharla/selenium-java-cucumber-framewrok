@@ -5,5 +5,5 @@ import org.openqa.selenium.MutableCapabilities;
 
 public interface DriverOptions {
 
-    public Capabilities getOptions();
+     Capabilities getOptions();
 }
