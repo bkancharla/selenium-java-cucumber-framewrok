@@ -2,8 +2,7 @@ package com.automation.framework.driverfactory;
 
 import org.openqa.selenium.MutableCapabilities;
 
-class ChromeDriverOptions implements    DriverOptions{
-    @Override
+class ChromeDriverOptions implements    BrowserCaps{
     public MutableCapabilities getOptions() {
         return null;
     }
