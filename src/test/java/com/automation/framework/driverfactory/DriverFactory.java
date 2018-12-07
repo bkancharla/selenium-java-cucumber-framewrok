@@ -8,7 +8,7 @@ public class DriverFactory {
     private WebDriver driver;
 
 
-    public void initiliZeDriver(){
+    public void initililzeDriver(){
 
         String browser = "chrome";
         switch (browser){
