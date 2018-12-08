@@ -1,4 +1,4 @@
-package com.automation.framework.driverfactory;
+package framework.driverfactory;
 
 import org.openqa.selenium.remote.RemoteWebDriver;
 
