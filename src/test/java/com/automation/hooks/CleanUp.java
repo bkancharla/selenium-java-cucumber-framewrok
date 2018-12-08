@@ -1,8 +1,22 @@
 package com.automation.hooks;
 
-public class CleanUp {
-    // THis is Very CritiCal Class
-    // @Scope("cucumber-glue") if you add this to class
+import cucumber.api.java.After;
+import cucumber.api.java.Before;
+import framework.driverfactory.DriverFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 
-    //
+public class CleanUp {
+// Clean Up any statefull Objects
+    // As Component means Singleton so better to re create if it's critical
+    // Other way you can put scope as Scenrario but you can only  to intject scenrio scope bean  into other Scenrio bean object.
+
+
+    @Autowired
+    DriverFactory driverFactory;
+    @After(order = 500)
+    public void cleanUp(){
+        driverFactory = null;
+        // Spring will re create new object after this( for next scenrio)
+
+    }
 }
