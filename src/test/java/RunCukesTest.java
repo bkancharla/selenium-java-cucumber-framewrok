@@ -4,7 +4,7 @@ import cucumber.api.testng.AbstractTestNGCucumberTests;
 @CucumberOptions(
         features = "src/test/resources/features",
         glue ={"com.automation.steps"},
-        tags = {"~@ignore", "~@wip"}
+        tags = {"not @ignore", "not @wip"}
 )
 public class RunCukesTest extends AbstractTestNGCucumberTests {
 }
