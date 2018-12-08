@@ -1,6 +1,6 @@
 
 @web
-Feature: Test Something
+Feature: Selenium Multithreading Test Example
 
     Scenario: Verify Google Title
         Given I open Google site

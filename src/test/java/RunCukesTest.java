@@ -5,6 +5,7 @@ import org.testng.annotations.DataProvider;
 @CucumberOptions(
         features = "src/test/resources/features",
         glue ={"com.automation.steps","com.automation.hooks"},
+        strict = true,
         tags = {"not @ignore", "not @wip"}
 )
 public class RunCukesTest extends AbstractTestNGCucumberTests {
