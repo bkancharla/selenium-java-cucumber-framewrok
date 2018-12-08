@@ -1,8 +1,7 @@
 # selenium-java-cucumber-framewrok
 
-This is make some template design which everyone can get pull it and start designing their design
-
-
-Intenstion to use Cuucmber 3 , Java 8 ,  selenium cross browser support and grid support
-
-As of now Create Driver object with Startgey pattern
+Selenium MutliThreaded Web Automation Example Project Developed with
+Cucumber - Testng -4
+Selenium
+Java
+This Code base has support for Multithreading support( Scenrios will be run on parallely with with in Single JVM
