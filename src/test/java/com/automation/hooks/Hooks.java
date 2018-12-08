@@ -16,14 +16,20 @@ public class Hooks {
 
     @Before(value = {"@web"}, order = 0)
     public void beofore(){
- driverFactory.initililzeDriver();
+        log.info("Initilizing Web Driver");
+
+        driverFactory.initililzeDriver();
 
     }
 
     @After(value = {"@web"}, order = 1000)
     public void After(){
 
-        log.info("Test");
+        log.info("Stopping Web Driver");
+
+        driverFactory.quitDriver();
 
     }
+
+
 }

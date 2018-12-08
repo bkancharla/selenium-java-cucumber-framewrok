@@ -1,4 +1,4 @@
-package com.automation.steps;
+package com.automation.hooks;
 
 import framework.springconfig.SpringCucmberConfig;
 import org.springframework.test.context.ContextConfiguration;

@@ -31,4 +31,15 @@ public class DriverFactory {
     public WebDriver getDriver() {
         return driver;
     }
+
+    public void quitDriver() {
+
+        try {
+            this.driver.quit();
+        } catch (Exception e){
+
+        } finally {
+            driver = null;
+        }
+    }
 }
