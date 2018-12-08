@@ -4,6 +4,5 @@ import org.openqa.selenium.Capabilities;
 import org.openqa.selenium.MutableCapabilities;
 
 public interface BrowserCaps {
-
      Capabilities getOptions();
 }
