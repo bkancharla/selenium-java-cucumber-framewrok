@@ -8,6 +8,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class DriverFactory {
 
+
     private WebDriver driver;
 
     @Autowired
@@ -17,12 +18,17 @@ public class DriverFactory {
     FirefoxDriverOptions firefoxDriverOptions;
 
 
-    public void initililzeDriver(){
+    public void initililzeDriver() {
 
         String browser = "chrome";
-        switch (browser){
+        switch (browser) {
             case "chrome":
                 driver = new ChromeDriver(chromeDriverOptions.getOptions());
         }
+    }
+
+
+    public WebDriver getDriver() {
+        return driver;
     }
 }

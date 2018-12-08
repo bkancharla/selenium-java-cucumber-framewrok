@@ -7,6 +7,6 @@ import org.springframework.stereotype.Component;
 class ChromeDriverOptions implements BrowserCaps {
     public MutableCapabilities getOptions() {
         System.setProperty("webdriver.chrome.driver", "./src/test/resources/drivers/chromedriver");
-        return null;
+        return new MutableCapabilities();
     }
 }
