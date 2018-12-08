@@ -11,7 +11,7 @@ public class RunCukesTest extends AbstractTestNGCucumberTests {
     @DataProvider(parallel = true)
     @Override
     public Object[][] scenarios() {
-
+        System.out.println("DDUE");
         return super.scenarios();
     }
 }
