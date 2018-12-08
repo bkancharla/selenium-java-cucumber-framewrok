@@ -18,7 +18,7 @@
         <junit.version>4.12</junit.version>
         <log4j2.version>2.9.1</log4j2.version>
         <generatereport>test</generatereport>
-        <spring.version>5.0.6.RELEASE</spring.version>
+        <spring.version>5.0.8.RELEASE</spring.version>
         <org.apache.maven.plugins.compiler-version>3.8.0</org.apache.maven.plugins.compiler-version>
         <java-version>1.8</java-version>
         <maven.surefire_version>2.22.1</maven.surefire_version>
@@ -123,6 +123,27 @@
                     <groupId>commons-logging</groupId>
                 </exclusion>
             </exclusions>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-core</artifactId>
+            <version>${log4j2.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-slf4j-impl</artifactId>
+            <version>${log4j2.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-1.2-api</artifactId>
+            <version>${log4j2.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-api</artifactId>
+            <version>${log4j2.version}</version>
         </dependency>
 
     </dependencies>
