@@ -3,11 +3,15 @@ package com.automation.hooks;
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
 import framework.driverfactory.DriverFactory;
+import framework.springconfig.SpringCucmberConfig;
 import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.test.context.ContextConfiguration;
 
-public class Hooks {
+@ContextConfiguration(classes = SpringCucmberConfig.class)
+
+public class Hooks extends SpringCucmberConfig {
     private static final Logger log = LogManager.getLogger(Hooks.class);
 
     @Autowired

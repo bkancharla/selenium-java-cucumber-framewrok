@@ -1,7 +1,6 @@
 package com.automation.hooks;
 
 import cucumber.api.java.After;
-import cucumber.api.java.Before;
 import framework.driverfactory.DriverFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 
