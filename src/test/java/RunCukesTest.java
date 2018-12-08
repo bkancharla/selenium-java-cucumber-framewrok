@@ -1,5 +1,6 @@
 import cucumber.api.CucumberOptions;
 import cucumber.api.testng.AbstractTestNGCucumberTests;
+import org.testng.annotations.DataProvider;
 
 @CucumberOptions(
         features = "src/test/resources/features",
@@ -7,4 +8,10 @@ import cucumber.api.testng.AbstractTestNGCucumberTests;
         tags = {"not @ignore", "not @wip"}
 )
 public class RunCukesTest extends AbstractTestNGCucumberTests {
+    @DataProvider(parallel = true)
+    @Override
+    public Object[][] scenarios() {
+
+        return super.scenarios();
+    }
 }

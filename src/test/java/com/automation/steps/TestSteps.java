@@ -3,15 +3,23 @@ package com.automation.steps;
 
 import cucumber.api.PendingException;
 import cucumber.api.java8.En;
+import org.apache.log4j.Logger;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class TestSteps implements En {
 
+    private static Logger log = Logger.getLogger(TestSteps.class);
+
     public TestSteps() {
         Given("I test", () -> {
-            System.out.println("hi");
+            log.info("hi");
         });
         Given("I open Google site", () -> {
+            log.info("hi");
+            log.info("hi");
+            log.info("hi");
+            log.info("hi");
+
 
         });
 
