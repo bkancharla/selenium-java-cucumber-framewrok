@@ -34,8 +34,8 @@ public class RunCukesTest extends AbstractTestNGCucumberTests {
         File reportOutputDirectory = new File("target/masterthought");
 
         List<String> jsonFiles = new ArrayList<>();
-        File e = new File("target/jsonReports/1.json");
-        Configuration configuration = new Configuration(reportOutputDirectory, "ETAF");
+        File e = new File("target/jsonReports/cucumber.json");
+        Configuration configuration = new Configuration(reportOutputDirectory, "selnium");
 
         configuration.addClassifications("Platform", "Windows");
         configuration.addClassifications("Browser", "chrome");
