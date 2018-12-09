@@ -31,11 +31,11 @@ public class RunCukesTest extends AbstractTestNGCucumberTests {
     public static void generateReport() {
         //	https://github.com/damianszczepanik/cucumber-reporting
         log.info("......Generating the Report....");
-        File reportOutputDirectory = new File("target/masterthought");
+        File reportOutputDirectory = new File("target");
 
         List<String> jsonFiles = new ArrayList<>();
         File e = new File("target/jsonReports/cucumber.json");
-        Configuration configuration = new Configuration(reportOutputDirectory, "selnium");
+        Configuration configuration = new Configuration(reportOutputDirectory, "selenium");
 
         configuration.addClassifications("Platform", "Windows");
         configuration.addClassifications("Browser", "chrome");
