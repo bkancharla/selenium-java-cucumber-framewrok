@@ -1,7 +1,6 @@
 package com.automation.steps;
 
 
-import cucumber.api.PendingException;
 import cucumber.api.java8.En;
 import framework.driverfactory.DriverFactory;
 import org.apache.log4j.Logger;
