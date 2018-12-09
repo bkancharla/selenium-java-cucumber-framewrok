@@ -14,6 +14,8 @@ import java.util.List;
 @CucumberOptions(
         features = "src/test/resources/features",
         glue ={"com.automation.steps","com.automation.hooks"},
+        plugin = {"pretty", "json:target/jsonreports/cucumber.json"
+                , "junit:target/junit_reports/cucumberjunit.xml"},
         strict = true,
         tags = {"not @ignore", "not @wip"}
 )
