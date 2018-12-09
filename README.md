@@ -1,6 +1,6 @@
 # selenium-java-cucumber-4-multithreaded-framewrok
 
-_Selenium MutliThreaded Web Automation Example Project Developed with
+Selenium MutliThreaded Web Automation Example Project Developed with
 Cucumber - Testng -4
 Selenium
 Java
