@@ -21,8 +21,8 @@
         <maven.surefire_version>2.22.1</maven.surefire_version>
         <selenium.version>3.141.59</selenium.version>
         <threads>10</threads>
-        <log4j2.version>2.9.1</log4j2.version>
-        <jvmargs>-Xms512m -Xmx1024m -Xss2M</jvmargs>
+        <log4j2.version>2.11.1</log4j2.version>
+        <jvmargs>-Xms512m -Xmx1024m -Xss1M</jvmargs>
 
     </properties>
 
